@@ -50,7 +50,7 @@ export const WithRuler: Story = () =>
 export const Interactive: Story = (args) =>
         <div className="App" style={{position: "relative", height: '100vh'}}>
             <GridRuler spacing="md"> </GridRuler>
-            <Grid container spacing="md" style={{height: '100%'}} {...args}>
+            <Grid container spacing="md" {...args}>
                 <Grid item xs={1}>
                     <Box>Box 1</Box>
                 </Grid>
