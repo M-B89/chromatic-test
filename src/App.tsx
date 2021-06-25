@@ -2,6 +2,7 @@ import React from 'react';
 import Box from './components/Box/Box';
 import Grid from './components/Grid/Grid';
 import GridRuler from './components/GridRuler/GridRuler';
+import './scss/tailwind.scss';
 
 function App() {
     return (

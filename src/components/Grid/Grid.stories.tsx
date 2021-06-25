@@ -5,7 +5,7 @@ import GridRuler from '../GridRuler/GridRuler';
 import Box from '../Box/Box';
 
 export default {
-    title: 'Grid',
+    title: 'Components/Grid',
     component: Grid,
 } as Meta;
 
