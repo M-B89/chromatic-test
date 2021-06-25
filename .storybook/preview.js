@@ -3,3 +3,4 @@ import { addDecorator } from '@storybook/react';
 import Layout from './Layout';
 
 addDecorator(storyFn => <Layout>{storyFn()}</Layout>);
+import './reset.css';

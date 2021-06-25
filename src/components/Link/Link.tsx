@@ -6,7 +6,10 @@ const Link: FunctionComponent<{
     classNames?: string;
 }> = ({text, classNames, url, ...props}) => {
     const classes = 'transition duration-500 ease-in-out hover:underline ' + classNames
-    return <a href={url} className={classes} {...props}>
+    return <a
+            href={url}
+            className={classes}
+            {...props}>
         {text}
     </a>
 }

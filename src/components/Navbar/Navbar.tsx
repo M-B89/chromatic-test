@@ -1,10 +1,14 @@
 import React from 'react';
 import Link from '../Link/Link';
+import {motion} from "framer-motion";
 
 const Navbar = () => {
     return (
-            <nav className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono'
-                 role='navigation'>
+            <motion.nav
+                    initial={{y: -200, opacity: .8}}
+                    animate={{y: 0, opacity: 1}}
+                    className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono'
+                    role='navigation'>
                 <a href='/' className='pl-8'>
                     Logo
                 </a>
@@ -20,7 +24,7 @@ const Navbar = () => {
                     <Link classNames='p-4' text="About" url='/about'/>
                     <Link classNames='p-4' text="Contact" url='/contact'/>
                 </div>
-            </nav>
+            </motion.nav>
     )
 }
 
